@@ -1,0 +1,16 @@
+job4_start_skills_1026 — staging; сборка build_job4_rows.py; живой сервер этим скриптом НЕ изменяется
+
+GameServer/SkillTable_Info/ChangeJobAddSkillTable.txt
+  живой  : 1178 б  md5 8e0cd3a44563ab0162505b6a924fc848 (12 строк: 1 2 3 4 12 13 14 15 23 24 25 26)
+  staging: 1347 б  md5 8fa64c2394d3c684a3b684553f270fcc (15 строк: + 6 17 28 в конце, прежние 12 — байт в байт)
+Indun_GameServer/SkillTable_Info/ChangeJobAddSkillTable.txt
+  живой  : 1178 б  md5 8e0cd3a44563ab0162505b6a924fc848 (12 строк: 1 2 3 4 12 13 14 15 23 24 25 26)
+  staging: 1347 б  md5 8fa64c2394d3c684a3b684553f270fcc (15 строк: + 6 17 28 в конце, прежние 12 — байт в байт)
+Ch2_GameServer/SkillTable_Info/ChangeJobAddSkillTable.txt
+  живой  : 1178 б  md5 8e0cd3a44563ab0162505b6a924fc848 (12 строк: 1 2 3 4 12 13 14 15 23 24 25 26)
+  staging: 1347 б  md5 8fa64c2394d3c684a3b684553f270fcc (15 строк: + 6 17 28 в конце, прежние 12 — байт в байт)
+  + 6 5 617 619 632 633 634
+  + 17 5 826 828 841 842 843
+  + 28 5 1050 1051 1062 1065 1066
+
+Применение: apply_job4_rows.py (SSH; по умолчанию сухой прогон). Проверка: verify_job4_rows.py.

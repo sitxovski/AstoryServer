@@ -1,0 +1,25 @@
+﻿Контекст базы данных изменен на "Joy1".
+F|OpCharacterRestore|1|0|dbo|2026-06-18T12:36:19.487
+F|OPFameBank|0|0|dbo|2012-05-11T09:09:50.880
+F|OPFameBankUP|0|0|dbo|2026-06-18T12:36:19.803
+F|OPFameCondition|1|1|dbo|2012-05-11T09:09:50.937
+F|OPFameIdxDel|0|0|dbo|2012-05-11T09:09:50.940
+F|OPFameProgressBank|0|0|dbo|2012-05-11T09:09:50.960
+F|OPFameProgressBankUP|0|0|dbo|2026-06-18T12:36:18.117
+F|UPCharChatNick|1|1|dbo|2026-06-18T12:36:18.497
+F|UPCharUserid|1|1|dbo|2026-06-18T12:36:19.097
+F|UPClanCallNameUp|1|1|dbo|2026-06-18T12:36:19.137
+F|UPClanCreate|1|1|dbo|2026-06-18T12:36:19.143
+F|UPClanEnter|1|1|dbo|2026-06-18T12:36:19.147
+F|UPClanmemberdelete|1|1|dbo|2026-06-18T12:36:19.497
+F|UPClanPurge|1|1|dbo|2026-06-18T12:36:19.570
+F|UPEventCoupon|1|1|dbo|2026-06-18T12:36:19.680
+F|UPMoveBlock|1|1|dbo|2026-06-18T12:36:18.843
+F|UPNickCheck|1|0|dbo|2026-06-18T12:36:18.857
+F|UPPartyidx|1|1|dbo|2026-06-18T12:36:18.963
+F|UPPrivateChat|1|1|dbo|2026-06-18T12:36:19.087
+F|UPSellItemAlarm|1|1|dbo|2026-06-18T12:36:19.520
+F|UPSoulMateInvite|1|1|dbo|2026-06-18T12:36:19.710
+F|UPUseNick|1|1|dbo|2026-06-18T12:36:18.380
+F|UPUserState|1|1|dbo|2026-06-18T12:36:18.557
+X|free|free

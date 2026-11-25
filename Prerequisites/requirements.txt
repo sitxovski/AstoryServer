@@ -1,0 +1,8 @@
+# Copyright (c) 2026 @sitxovski (Discord)
+# Astory Server - Python packages for the deploy / verify / anti-cheat tools (Patches\*\tools, Tools\Anticheat, SQL)
+pefile>=2023.2       # reading / patching the server executables
+capstone>=5.0        # disassembler (patch verification)
+unicorn>=2.0         # CPU emulator (patch stands)
+keystone-engine>=0.9 # assembler (patch tools)
+cryptography>=42     # keys, LogSeal
+pyodbc>=5.0          # SQL Server access

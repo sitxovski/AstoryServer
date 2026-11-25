@@ -1,0 +1,30 @@
+{
+  "_comment": "Конфиг журнала дел ac_case.py (волна В6). Сроки лестницы согласованы с автоблоками стойки: P69 Stage1/2/3Hours = 24/720/-1, P48 BlockHours = 24 (проверка: python ac_case.py ladder --check). evidence_root — хранилище доказательств: локально у владельца, НЕ на шаре стойки и не в Perforce; переопределяется переменной ASDA_CASES_DIR или ключом --store.",
+  "evidence_root": "D:/AsdaCases",
+  "appeal_days": 14,
+  "retention_days": 180,
+  "two_sources_from_step": 3,
+  "max_file_mb": 200,
+  "share_root": "//@@ASTORY_SERVER_HOSTNAME@@/h(@@ASTORY_SERVER_HOSTNAME@@_ns)/ASDA/Working_ASDA/v2",
+  "block_script": "@@ASTORY_DEV_ROOT_FWD@@/AstoryServer/Docs/SQL/ac0_block_user.sql",
+  "unblock_script": "@@ASTORY_DEV_ROOT_FWD@@/AstoryServer/Docs/SQL/ac0_unblock_user.sql",
+  "ladder": [
+    {"step": 0, "code": "observe",     "name": "Наблюдение",              "hours": null, "exec": "none",
+     "mechanism": "только журнал дел"},
+    {"step": 1, "code": "warn",        "name": "Предупреждение",          "hours": null, "exec": "manual",
+     "mechanism": "GM-нотис (чат 6028/6029) вручную, затем ac_case.py execute"},
+    {"step": 2, "code": "kick",        "name": "Кик",                     "hours": null, "exec": "manual",
+     "mechanism": "GM Kick 6018 (Log_Operator) вручную, затем ac_case.py execute"},
+    {"step": 3, "code": "block_day",   "name": "Блок на сутки",           "hours": 24,   "exec": "block",
+     "mechanism": "ac0_block_user.sql (us_block=5 + BlockList); = P69 ступень 1 (20 нарушений), = P48 BlockHours",
+     "ini": [["P69_IntegrityAutoBlock", "Stage1Hours"], ["P48_KickAutoBlock", "BlockHours"]]},
+    {"step": 4, "code": "block_month", "name": "Блок на месяц",           "hours": 720,  "exec": "block",
+     "mechanism": "ac0_block_user.sql; = P69 ступень 2 (50 нарушений)",
+     "ini": [["P69_IntegrityAutoBlock", "Stage2Hours"]]},
+    {"step": 5, "code": "block_perm",  "name": "Бессрочный блок",         "hours": -1,   "exec": "block",
+     "mechanism": "ac0_block_user.sql, -1 = 30 лет (как UPHackBlock); = P69 ступень 3 (больше 50)",
+     "ini": [["P69_IntegrityAutoBlock", "Stage3Hours"]]},
+    {"step": 6, "code": "rollback",    "name": "Откат имущества по Serial", "hours": null, "exec": "report",
+     "mechanism": "ac_case.py rollback-report (только отчёт); запись — владелец, на копии базы, вне инструмента"}
+  ]
+}

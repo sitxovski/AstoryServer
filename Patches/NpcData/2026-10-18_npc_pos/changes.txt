@@ -1,0 +1,11 @@
+castle_of_chess.npc: rec 0 idx 0 type 152 (NPC_00_mdel_jewelbox): tile 473,413 -> 473,413; face 180 -> 288
+castle_of_chess.npc: rec 1 idx 1 type 153 (NPC_01_mdel_jewelbox): tile 445,72 -> 445,72; face 180 -> 0
+quizstage.npc: rec 0 idx 0 type 55 (NPC_00_meio): tile 199,154 -> 199,154; face 150 -> 240
+Rein.npc: rec 10 idx 10 type 104 (NPC_10_ben): tile 58,339 -> 64,334; face 180 -> 11
+Rein.npc: rec 14 idx 14 type 148 (NPC_14_mdel_noticeboard): tile 46,389 -> 48,390; face 110 -> 110
+Rein.npc: rec 17 idx 17 type 37 (NPC_17_arshes): tile 74,372 -> 74,372; face 0 -> 190
+Sillaris.npc: rec 29 idx 29 type 75 (NPC_29_ludivine): tile 333,292 -> 333,292; face 180 -> 13
+Sillaris.npc: rec 32 idx 32 type 179 (NPC_32_scud): tile 383,472 -> 383,472; face 0 -> 180
+Sillaris.npc: rec 33 idx 33 type 182 (NPC_33_miracle): tile 352,476 -> 355,474; face 0 -> 125
+Sillaris.npc: rec 36 idx 36 type 9 (NPC_36_mdel_raidboard): tile 400,396 -> 401,396; face 0 -> 0
+SunnyCoast.npc: rec 7 idx 7 type 123 (NPC_07_mdel_usedboat): tile 353,351 -> 353,351; face 90 -> 90

@@ -1,0 +1,5 @@
+# Copyright (c) 2026 @sitxovski (Discord)
+# Windows scripts: cmd needs CRLF (labels / goto are unreliable with LF)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

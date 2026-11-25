@@ -1,0 +1,36 @@
+# Copyright (c) 2026 @sitxovski (Discord)
+# your local answers and secrets - never commit
+_setup/astory.settings.local.json
+**/secrets/
+*.env
+*.key
+*.pem
+*.pfx
+*.p12
+# general
+__pycache__/
+*.pyc
+*.log
+*.bak
+*.bak*
+*.tmp
+*.stackdump
+.vs/
+
+# build output, test runs
+**/obj/
+**/out/
+**/run_*/
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.obj
+*.res
+*.zip
+# server files and clean databases: separate downloads ("AstoryServer Files", "AstoryServer Database")
+ServerFiles/
+Database/
+# database: only the clean .bak files of the separate download (no SQL scripts, backups or rollbacks)
+*.sql

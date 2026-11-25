@@ -1,0 +1,53 @@
+﻿Контекст базы данных изменен на "Joy1".
+C|Arabic_BIN|ci=0
+C|Arabic_BIN2|ci=0
+C|Arabic_CI_AI|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C C9=CA B2=2
+C|Arabic_CI_AI_WS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C C9=CA
+C|Arabic_CI_AI_KS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C C9=CA B2=2
+C|Arabic_CI_AI_KS_WS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C C9=CA
+C|Arabic_CI_AS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C C9=CA B2=2
+C|Arabic_CI_AS_WS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C C9=CA
+C|Arabic_CI_AS_KS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C C9=CA B2=2
+C|Arabic_CI_AS_KS_WS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C C9=CA
+C|Arabic_CS_AI|ci=0 9E=ign DC=ign FD=ign FE=ign C9=CA
+C|Arabic_CS_AI_WS|ci=0 9E=ign DC=ign FD=ign FE=ign C9=CA
+C|Arabic_CS_AI_KS|ci=0 9E=ign DC=ign FD=ign FE=ign C9=CA
+C|Arabic_CS_AI_KS_WS|ci=0 9E=ign DC=ign FD=ign FE=ign C9=CA
+C|Arabic_CS_AS|ci=0 9E=ign DC=ign FD=ign FE=ign C9=CA
+C|Arabic_CS_AS_WS|ci=0 9E=ign DC=ign FD=ign FE=ign C9=CA
+C|Arabic_CS_AS_KS|ci=0 9E=ign DC=ign FD=ign FE=ign C9=CA
+C|Arabic_CS_AS_KS_WS|ci=0 9E=ign DC=ign FD=ign FE=ign C9=CA
+C|Arabic_100_BIN|ci=0
+C|Arabic_100_BIN2|ci=0
+C|Arabic_100_CI_AI|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C B2=2
+C|Arabic_100_CI_AI_WS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C
+C|Arabic_100_CI_AI_KS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C B2=2
+C|Arabic_100_CI_AI_KS_WS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C
+C|Arabic_100_CI_AS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C B2=2
+C|Arabic_100_CI_AS_WS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C
+C|Arabic_100_CI_AS_KS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C B2=2
+C|Arabic_100_CI_AS_KS_WS|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C
+C|Arabic_100_CS_AI|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AI_WS|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AI_KS|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AI_KS_WS|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AS|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AS_WS|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AS_KS|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AS_KS_WS|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CI_AI_SC|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C B2=2
+C|Arabic_100_CI_AI_WS_SC|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C
+C|Arabic_100_CI_AI_KS_SC|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C B2=2
+C|Arabic_100_CI_AI_KS_WS_SC|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C
+C|Arabic_100_CI_AS_SC|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C B2=2
+C|Arabic_100_CI_AS_WS_SC|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C
+C|Arabic_100_CI_AS_KS_SC|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C B2=2
+C|Arabic_100_CI_AS_KS_WS_SC|ci=1 9E=ign DC=ign FD=ign FE=ign 8C=9C
+C|Arabic_100_CS_AI_SC|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AI_WS_SC|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AI_KS_SC|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AI_KS_WS_SC|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AS_SC|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AS_WS_SC|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AS_KS_SC|ci=0 9E=ign DC=ign FD=ign FE=ign
+C|Arabic_100_CS_AS_KS_WS_SC|ci=0 9E=ign DC=ign FD=ign FE=ign

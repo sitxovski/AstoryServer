@@ -1,0 +1,155 @@
+﻿--- live/OPFameBank
++++ p45/OPFameBank
+@@ -19 +19 @@
+-	SET @SQL=@SQL+N'WHERE p.Charname= @sw1 '
++	SET @SQL=@SQL+N'WHERE (p.Charname= @sw1 AND Joy1.dbo.fn_AsdaNameEq(p.Charname, @sw1) = 1) '
+
+--- live/OPFameBankUP
++++ p45/OPFameBankUP
+@@ -20 +20 @@
+-		WHERE Charname=@Sw
++		WHERE (Charname=@Sw AND dbo.fn_AsdaNameEq(Charname, @Sw) = 1)
+@@ -49 +49 @@
+-		WHERE Charname=@Sw
++		WHERE (Charname=@Sw AND dbo.fn_AsdaNameEq(Charname, @Sw) = 1)
+
+--- live/OPFameCondition
++++ p45/OPFameCondition
+@@ -19 +19 @@
+-	SET @SQL=@SQL+N'WHERE p.Charname= @sw1 '
++	SET @SQL=@SQL+N'WHERE (p.Charname= @sw1 AND Joy1.dbo.fn_AsdaNameEq(p.Charname, @sw1) = 1) '
+
+--- live/OPFameIdxDel
++++ p45/OPFameIdxDel
+@@ -19 +19 @@
+-	SET @SQL=@SQL+N'WHERE p.Charname= @sw1 AND Fameidx=@Fmidx1 '
++	SET @SQL=@SQL+N'WHERE (p.Charname= @sw1 AND Joy1.dbo.fn_AsdaNameEq(p.Charname, @sw1) = 1) AND Fameidx=@Fmidx1 '
+
+--- live/OPFameProgressBank
++++ p45/OPFameProgressBank
+@@ -19 +19 @@
+-	SET @SQL=@SQL+N'WHERE p.Charname= @sw1 '
++	SET @SQL=@SQL+N'WHERE (p.Charname= @sw1 AND Joy1.dbo.fn_AsdaNameEq(p.Charname, @sw1) = 1) '
+
+--- live/OPFameProgressBankUP
++++ p45/OPFameProgressBankUP
+@@ -20 +20 @@
+-		WHERE Charname=@Sw
++		WHERE (Charname=@Sw AND dbo.fn_AsdaNameEq(Charname, @Sw) = 1)
+@@ -49 +49 @@
+-		WHERE Charname=@Sw
++		WHERE (Charname=@Sw AND dbo.fn_AsdaNameEq(Charname, @Sw) = 1)
+
+--- live/OpCharacterRestore
++++ p45/OpCharacterRestore
+@@ -164 +164 @@
+-WHERE userindex=@Userindex AND Charidx=@Charidx AND charname=@Charname ORdER BY Edate DESC
++WHERE userindex=@Userindex AND Charidx=@Charidx AND (charname=@Charname AND dbo.fn_AsdaNameEq(charname, @Charname) = 1) ORdER BY Edate DESC
+
+--- live/UPCharChatNick
++++ p45/UPCharChatNick
+@@ -19 +19 @@
+-		SELECT @Guildidx = Guildidx FROM dbo.Charguild  WITH (READUNCOMMITTED) WHERE Charname = @Charname
++		SELECT @Guildidx = Guildidx FROM dbo.Charguild  WITH (READUNCOMMITTED) WHERE (Charname = @Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1)
+
+--- live/UPCharUserid
++++ p45/UPCharUserid
+@@ -16 +16 @@
+-	WHERE Charname=@Charname 
++	WHERE (Charname=@Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1) 
+
+--- live/UPClanCallNameUp
++++ p45/UPClanCallNameUp
+@@ -23 +23 @@
+-	WHERE Clanidx=@Clanidx AND Charname = @Charname 
++	WHERE Clanidx=@Clanidx AND (Charname = @Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1) 
+
+--- live/UPClanCreate
++++ p45/UPClanCreate
+@@ -54 +54 @@
+-		IF EXISTS ( SELECT Cname  FROM ClanData WITH (READUNCOMMITTED)  WHERE Cname = @Cname )
++		IF EXISTS ( SELECT Cname  FROM ClanData WITH (READUNCOMMITTED)  WHERE (Cname = @Cname AND dbo.fn_AsdaNameEq(Cname, @Cname) = 1) )
+
+--- live/UPClanEnter
++++ p45/UPClanEnter
+@@ -22 +22 @@
+-	WHERE Cname=@Cname 	
++	WHERE (Cname=@Cname AND dbo.fn_AsdaNameEq(Cname, @Cname) = 1) 	
+@@ -34 +34 @@
+-		WHERE Userindex=@Userindex AND Charidx=@Charidx AND Cname=@Cname
++		WHERE Userindex=@Userindex AND Charidx=@Charidx AND (Cname=@Cname AND dbo.fn_AsdaNameEq(Cname, @Cname) = 1)
+
+--- live/UPClanPurge
++++ p45/UPClanPurge
+@@ -17 +17 @@
+-	WHERE Clanidx=@Clanidx AND Userindex=@Userindex AND Charname=@charname
++	WHERE Clanidx=@Clanidx AND Userindex=@Userindex AND (Charname=@charname AND dbo.fn_AsdaNameEq(Charname, @charname) = 1)
+
+--- live/UPClanmemberdelete
++++ p45/UPClanmemberdelete
+@@ -17 +17 @@
+-	WHERE Cname=@Clanname AND Charname=@charname
++	WHERE (Cname=@Clanname AND dbo.fn_AsdaNameEq(Cname, @Clanname) = 1) AND (Charname=@charname AND dbo.fn_AsdaNameEq(Charname, @charname) = 1)
+@@ -28 +28 @@
+-		WHERE Cname=@Clanname
++		WHERE (Cname=@Clanname AND dbo.fn_AsdaNameEq(Cname, @Clanname) = 1)
+
+--- live/UPEventCoupon
++++ p45/UPEventCoupon
+@@ -22 +22 @@
+-	WHERE Userindex=@Userindex AND Charidx=@Charidx AND Charname=@Charname AND Seridx=@Seridx+1 AND State=0
++	WHERE Userindex=@Userindex AND Charidx=@Charidx AND (Charname=@Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1) AND Seridx=@Seridx+1 AND State=0
+
+--- live/UPMoveBlock
++++ p45/UPMoveBlock
+@@ -9 +9 @@
+-	WHERE Charname = @Charname 
++	WHERE (Charname = @Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1) 
+
+--- live/UPNickCheck
++++ p45/UPNickCheck
+@@ -30 +30 @@
+-		IF EXISTS ( SELECT Charname  FROM dbo.CharPos WITH (READUNCOMMITTED) WHERE Charname = @charname )
++		IF EXISTS ( SELECT Charname  FROM dbo.CharPos WITH (READUNCOMMITTED) WHERE (Charname = @charname AND dbo.fn_AsdaNameEq(Charname, @charname) = 1) )
+
+--- live/UPPartyidx
++++ p45/UPPartyidx
+@@ -17 +17 @@
+-	WHERE Charname = @Charname
++	WHERE (Charname = @Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1)
+
+--- live/UPPrivateChat
++++ p45/UPPrivateChat
+@@ -22 +22 @@
+-	WHERE Charname = @Charname
++	WHERE (Charname = @Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1)
+
+--- live/UPSellItemAlarm
++++ p45/UPSellItemAlarm
+@@ -17 +17 @@
+-	WHERE Charname = @Charname
++	WHERE (Charname = @Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1)
+@@ -50 +50 @@
+-			WHERE Charname=@Charname AND Code=@code AND Sprice=@Sprice
++			WHERE (Charname=@Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1) AND Code=@code AND Sprice=@Sprice
+
+--- live/UPSoulMateInvite
++++ p45/UPSoulMateInvite
+@@ -21 +21 @@
+-	WHERE Charname=@Charname1
++	WHERE (Charname=@Charname1 AND dbo.fn_AsdaNameEq(Charname, @Charname1) = 1)
+@@ -39 +39 @@
+-	WHERE Charname=@Charname2	
++	WHERE (Charname=@Charname2 AND dbo.fn_AsdaNameEq(Charname, @Charname2) = 1)	
+
+--- live/UPUseNick
++++ p45/UPUseNick
+@@ -30 +30 @@
+-		IF EXISTS ( SELECT Charname  FROM dbo.CharPos WITH (READUNCOMMITTED) WHERE Charname = @charname )
++		IF EXISTS ( SELECT Charname  FROM dbo.CharPos WITH (READUNCOMMITTED) WHERE (Charname = @charname AND dbo.fn_AsdaNameEq(Charname, @charname) = 1) )
+
+--- live/UPUserState
++++ p45/UPUserState
+@@ -17 +17 @@
+-	WHERE Charname = @Charname
++	WHERE (Charname = @Charname AND dbo.fn_AsdaNameEq(Charname, @Charname) = 1)

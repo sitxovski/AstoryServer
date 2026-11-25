@@ -1,0 +1,4 @@
+RelayServer\RelayServer.exe | 97cda8509fc1c576adedb741ca123f37 | a8cd94ba91b32e6ad1a254feb0dd7bc0
+Indun_RelayServer\RelayServer.exe | 97cda8509fc1c576adedb741ca123f37 | a8cd94ba91b32e6ad1a254feb0dd7bc0
+Ch2_RelayServer\RelayServer.exe | 1ceccf1af6acb00cf17710d5bfa1a0cc | 075c41a5256eabbbab7c991bef9f47d5
+ChannelManager\ChannelManager.exe | e338a9d471853256fe37589303bc343b | 502e940db681a484cb73fcabbe9a88f4

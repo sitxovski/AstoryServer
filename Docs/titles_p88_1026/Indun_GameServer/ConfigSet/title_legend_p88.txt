@@ -1,0 +1,14 @@
+# P88: item codes with ItemGrade == 4 (Legend) from client item_list.csv (59168 rows), gen_title_grades_p88.py
+# codes 207, ranges 12
+72266-72288
+72381-72403
+72496-72518
+72611-72633
+72765
+72770
+72775
+72780
+75242-75316
+75396-75421
+75426
+79417-79425
