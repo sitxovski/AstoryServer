@@ -4,6 +4,8 @@
 
 ### ❤️ هل أعجبك المشروع؟ ادعم هذا العمل الشاق على [**Boosty**](https://boosty.to/sitxovski_yurii)
 
+### 💬 انضم إلى مجتمعنا على [**Discord**](https://discord.gg/DBPFczQKb2)
+
 # Astory Server
 
 **التصحيحات والخدمات التي تشغّل خادم لعبة Astory**
@@ -60,5 +62,7 @@
 <div align="center">
 
 ### ❤️ ادعم هذا العمل الشاق على [**Boosty**](https://boosty.to/sitxovski_yurii)
+
+### 💬 انضم إلى مجتمعنا على [**Discord**](https://discord.gg/DBPFczQKb2)
 
 </div>

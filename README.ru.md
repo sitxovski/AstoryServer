@@ -4,6 +4,8 @@
 
 ### ❤️ Нравится проект? Поддержите труд на [**Boosty**](https://boosty.to/sitxovski_yurii)
 
+### 💬 Присоединяйтесь к нашему сообществу в [**Discord**](https://discord.gg/DBPFczQKb2)
+
 # Astory Server
 
 **Патчи и службы, на которых работает игровой сервер Astory**
@@ -56,5 +58,7 @@
 <div align="center">
 
 ### ❤️ Поддержите труд на [**Boosty**](https://boosty.to/sitxovski_yurii)
+
+### 💬 Присоединяйтесь к нашему сообществу в [**Discord**](https://discord.gg/DBPFczQKb2)
 
 </div>
